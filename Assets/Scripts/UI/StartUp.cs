@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 //Alessandro Napoli st20269559
 
-public class Startup : MonoBehaviour
+public class StartUp : MonoBehaviour
 {
     private void Start()
     {

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 //Alessandro Napoli st20269559
 
-public class Mastervolume : MonoBehaviour
+public class MasterVolume : MonoBehaviour
 {
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider soundSlider;

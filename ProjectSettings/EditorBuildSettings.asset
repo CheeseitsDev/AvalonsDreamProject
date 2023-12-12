@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 1a9e55a7956dfd942a60e6bff00d3b66
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: a2a42aefb33060747a6e7626ce444df7
+  - enabled: 1
+    path: Assets/Scenes/Cutscene1.unity
+    guid: 1c745914c2b50974a887316fde27f692
+  - enabled: 1
+    path: Assets/Scenes/WeaponSelect.unity
+    guid: 183e30399c9c18848b36bb6d3cc09a52
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: f7e48a83c70085048b4168a2be7cc5b1
+  - enabled: 1
+    path: Assets/Scenes/GameOverScreen.unity
+    guid: c2998fdcd4733dc4e91d085ada587944
+  m_configObjects: {}

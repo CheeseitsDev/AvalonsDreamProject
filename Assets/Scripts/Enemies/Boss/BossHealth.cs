@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-//Ethan Hoare st20271423
+//Ethan Hoare
 
 public class BossHealth : MonoBehaviour
 {

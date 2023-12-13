@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
-//Ethan Hoare st20271423
+//Ethan Hoare
 
 public class Emp: MonoBehaviour
 {

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-//Ashley Gentleman st20266734
+//Ashley Gentleman
 
 public class UpgradeMenu : MonoBehaviour
 {

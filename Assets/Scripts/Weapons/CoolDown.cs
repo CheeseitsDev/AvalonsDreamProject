@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable] 
 
-//Ethan Hoare st20271423
+//Ethan Hoare
 
 public class CoolDown : MonoBehaviour
 {

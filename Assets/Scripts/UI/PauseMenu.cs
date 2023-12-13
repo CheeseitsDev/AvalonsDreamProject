@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//Ashley Gentleman st20266734
+//Ashley Gentleman
 
 public class PauseMenu : MonoBehaviour
 {

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-//Alessandro Napoli st20269559
+//Alessandro Napoli
 
 public class MasterVolume : MonoBehaviour
 {

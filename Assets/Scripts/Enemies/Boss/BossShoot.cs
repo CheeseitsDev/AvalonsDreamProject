@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Ethan Hoare st20271423
+//Ethan Hoare
 
 public class BossShoot : MonoBehaviour
 {

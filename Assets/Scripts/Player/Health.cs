@@ -14,11 +14,6 @@ public class Health : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) //This was just a test to check if the hp will go down, cancel when we have an actual scene
-        {
-            DamagePlayer(10);
-        }
-
         if(GameManager.Instance.playerCurrentHealth < GameManager.Instance.playerMaxHealth)
         {
             StartCoroutine(Regen());
@@ -32,7 +27,7 @@ public class Health : MonoBehaviour
 
     private IEnumerator Regen()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(GameManager.Instance.playerRegenSpeed);
 
         if(GameManager.Instance.playerCurrentHealth < GameManager.Instance.playerMaxHealth)
         {

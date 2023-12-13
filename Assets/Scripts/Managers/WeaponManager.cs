@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
+    [Header("Emp")]
+    public int coolDown = 5;
+
     [Header("Bullet")] //Creates a header in inspector
     public int bulletSpeed = 8;
 

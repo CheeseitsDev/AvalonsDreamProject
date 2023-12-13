@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
-//Ethan Hoare st20271423
+//Ethan Hoare
 
 public class Emp: MonoBehaviour
 {
@@ -15,11 +15,11 @@ public class Emp: MonoBehaviour
     {
         if(Input.GetKeyDown("q")) 
         {
-            shoot();
+            Shoot();
         }
     }
 
-    private void shoot()
+    private void Shoot()
     {
         if(coolDown.coolDownEnabled) return;
         GameObject bullet = Instantiate(empPrefab, shootingPoint.position, shootingPoint.rotation);

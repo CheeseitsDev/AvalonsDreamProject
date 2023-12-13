@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//Ethan Hoare st20271423
+//Ethan Hoare
 
 public class Effect : MonoBehaviour
 {
@@ -28,7 +28,7 @@ public class Effect : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Boss"))
         {
-            bossShootScript.hitByEmp();
+            bossShootScript.HitByEmp();
 
             Destroy(gameObject);
         }

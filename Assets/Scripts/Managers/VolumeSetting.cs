@@ -5,7 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-//Alessandro Napoli st20269559
+//Alessandro Napoli
+
 public class VolumeSetting : MonoBehaviour
 {
     [SerializeField] private Slider soundVolumeSlider = null;

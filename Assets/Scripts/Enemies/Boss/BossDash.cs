@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
-//Ethan Hoare st20271423
+//Ethan Hoare
 
 public class BossDash : MonoBehaviour
 {

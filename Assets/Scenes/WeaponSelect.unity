@@ -3119,7 +3119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &440382058
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6559,14 +6559,15 @@ MonoBehaviour:
   playerCurrentShieldCharge: 0
   playerHealthUpgradeTier: 0
   playerShieldUpgradeTier: 0
+  playerKills: 0
   playerSpeed: 8
   playerRegenSpeed: 10
   playerShieldRegenSpeed: 60
   enemyHealth: 100
   enemyDamage: 10
   enemySpeed: 3.5
-  maxBossHealth: 1000
-  bossHealth: 100
+  maxBossHealth: 500
+  bossHealth: 500
   bossDamage: 15
   bossForce: 20
   bossSpeed: 5

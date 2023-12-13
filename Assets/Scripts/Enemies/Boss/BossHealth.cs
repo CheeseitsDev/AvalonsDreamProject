@@ -2,31 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-//Ethan Hoare st20271423
+//Ethan Hoare
 
 public class BossHealth : MonoBehaviour
 {
-    // public Image bossHealthBar;
+    public Slider bossBar;
     private bool isBossDead;
 
     private void Start()
     {
+        bossBar.maxValue = GameManager.Instance.maxBossHealth;
+        bossBar.value = GameManager.Instance.bossHealth;
+
         GameManager.Instance.bossHealth = GameManager.Instance.maxBossHealth;
     }
 
-    public void takeDamage(int damageamount)
+    public void TakeDamage(int damageamount)
     {
         GameManager.Instance.bossHealth -= damageamount;
     }
     
     void Update()
     {
-        // bossHealthBar.fillAmount = Mathf.Clamp(GameManager.Instance.bossHealth / GameManager.Instance.maxBossHealth, 0, 1);
+        SetHealth(GameManager.Instance.bossHealth);
+
         if(GameManager.Instance.bossHealth <= 0 && !isBossDead)
         {
-            Destroy(gameObject) ;
-            gameObject.SetActive(false);       
+            SceneManager.LoadScene("WinScreen");
         }
+    }
+
+    public void SetHealth(int hp)
+    {
+        bossBar.value = hp;
     }
 }

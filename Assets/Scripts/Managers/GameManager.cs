@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public int playerCurrentShieldCharge = 0;
     public int playerHealthUpgradeTier;
     public int playerShieldUpgradeTier;
+    public int playerKills;
     public float playerSpeed = 5f;
     public float playerRegenSpeed = 10f;
     public float playerShieldRegenSpeed = 60f;
@@ -24,8 +25,8 @@ public class GameManager : MonoBehaviour
     public float enemySpeed = 3.5f;
 
     [Header("Boss Attributes")]
-    public int maxBossHealth = 1000;
-    public int bossHealth = 100;
+    public int maxBossHealth = 500;
+    public int bossHealth = 500;
     public int bossDamage = 15;
     public int bossForce = 20;
     public int bossSpeed = 5;

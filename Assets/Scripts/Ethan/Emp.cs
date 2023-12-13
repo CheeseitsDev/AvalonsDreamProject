@@ -15,11 +15,11 @@ public class Emp: MonoBehaviour
     {
         if(Input.GetKeyDown("q")) 
         {
-            shoot();
+            Shoot();
         }
     }
 
-    private void shoot()
+    private void Shoot()
     {
         if(coolDown.coolDownEnabled) return;
         GameObject bullet = Instantiate(empPrefab, shootingPoint.position, shootingPoint.rotation);

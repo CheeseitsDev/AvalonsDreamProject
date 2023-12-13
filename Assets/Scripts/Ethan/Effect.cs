@@ -28,7 +28,7 @@ public class Effect : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Boss"))
         {
-            bossShootScript.hitByEmp();
+            bossShootScript.HitByEmp();
 
             Destroy(gameObject);
         }

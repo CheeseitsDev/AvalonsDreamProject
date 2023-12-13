@@ -17,16 +17,16 @@ public class BossShoot : MonoBehaviour
         if (timer > 1)
         {
             timer = 0;
-            shoot();
+            Shoot();
         }
     }
 
-    public void hitByEmp() 
+    public void HitByEmp() 
     {
         timer = -4;
     }
 
-    private void shoot()
+    private void Shoot()
     {
         Instantiate(bossbullet, bulletpos.position, bulletpos.rotation);
     }

@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class EnemyShoot : MonoBehaviour
 {
+    public AudioSource shoot;
     public GameObject enemyBullet;
     public Transform firePoint;
     private float timer;
@@ -28,6 +29,8 @@ public class EnemyShoot : MonoBehaviour
 
     private void Shoot()
     {
+        shoot.Play();
+
         Instantiate(enemyBullet, firePoint.position, firePoint.rotation);
     }
 }

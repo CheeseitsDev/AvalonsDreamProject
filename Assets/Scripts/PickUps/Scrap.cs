@@ -6,13 +6,8 @@ using UnityEngine;
 
 public class Scrap : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D col)
+    public void IncreaseScrap(int scrapNum)
     {
-        if(col.tag == "Player")
-        {
-            GameManager.Instance.playerScrap ++;
-
-            Destroy(gameObject);
-        }
+        GameManager.Instance.playerScrap += scrapNum;
     }
 }

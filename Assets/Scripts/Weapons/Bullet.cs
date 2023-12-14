@@ -9,12 +9,14 @@ public class Bullet : MonoBehaviour
     public Rigidbody2D rb;
 
     private BossHealth bossHealthScript;
+    private EnemyHealth enemyHealthScript;
 
     private void Start()
     {
         StartCoroutine(DestroyBullet()); //Starts timer
 
         bossHealthScript = GameObject.FindGameObjectWithTag("Boss").GetComponent<BossHealth>();
+        enemyHealthScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyHealth>();
     }
 
     private void Update()
@@ -50,19 +52,19 @@ public class Bullet : MonoBehaviour
         {
             if(WeaponManager.Instance.isPistolSelected)
             {
-                GameManager.Instance.enemyHealth -= WeaponManager.Instance.pistolDamage;
+                enemyHealthScript.TakeDamage(WeaponManager.Instance.pistolDamage);
 
                 Destroy(gameObject);
             }
             else if(WeaponManager.Instance.isBurstRifleSelected)
             {
-                GameManager.Instance.enemyHealth -= WeaponManager.Instance.burstRifleDamage;
+                enemyHealthScript.TakeDamage(WeaponManager.Instance.burstRifleDamage);
 
                 Destroy(gameObject);
             }
             else
             {
-                GameManager.Instance.enemyHealth -= WeaponManager.Instance.shotgunDamage;
+                enemyHealthScript.TakeDamage(WeaponManager.Instance.shotgunDamage);
 
                 Destroy(gameObject);
             }

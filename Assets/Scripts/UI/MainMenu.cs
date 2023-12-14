@@ -16,6 +16,8 @@ public class MainMenu : MonoBehaviour
         settingMenu.SetActive(false);
         creditScene.SetActive(false);
         mainMenu.SetActive(true);
+
+        Cursor.visible = true;
     }
 
     public void PlayGame()

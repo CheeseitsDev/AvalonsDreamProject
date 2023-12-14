@@ -7,11 +7,13 @@ using UnityEngine;
 public class Effect : MonoBehaviour
 {
     private BossShoot bossShootScript;
+    private EnemyShoot enemyShootScript;
     private float timer;
 
     private void Start()
     {
         bossShootScript = GameObject.FindGameObjectWithTag("Boss").GetComponent<BossShoot>();
+        enemyShootScript = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyShoot>();
     }
 
     private void Update()

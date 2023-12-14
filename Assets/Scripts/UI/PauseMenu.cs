@@ -51,6 +51,8 @@ public class PauseMenu : MonoBehaviour
     {
         GameManager.Instance.isPaused = true;
 
+        Cursor.visible = true;
+
         Time.timeScale = 0;
 
         player.SetActive(false);
@@ -60,6 +62,8 @@ public class PauseMenu : MonoBehaviour
     public void UnPause()
     {
         GameManager.Instance.isPaused = false;
+
+        Cursor.visible = false;
 
         Time.timeScale = 1;
 

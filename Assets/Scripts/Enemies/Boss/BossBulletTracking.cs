@@ -21,7 +21,7 @@ public class BossBulletTracking : MonoBehaviour
 
     private void Update()
     {
-        rb.AddForce(-transform.up * GameManager.Instance.bossForce);
+        rb.AddForce(-transform.right * GameManager.Instance.bossForce);
 
         timer += Time.deltaTime;
 
@@ -37,6 +37,11 @@ public class BossBulletTracking : MonoBehaviour
         {
             healthScript.DamagePlayer(GameManager.Instance.bossDamage);
             
+            Destroy(gameObject);
+        }
+
+        if(other.gameObject.CompareTag("Border"))
+        {
             Destroy(gameObject);
         }
     }

@@ -6559,19 +6559,23 @@ MonoBehaviour:
   playerCurrentShieldCharge: 0
   playerHealthUpgradeTier: 0
   playerShieldUpgradeTier: 0
-  playerKills: 0
   playerSpeed: 8
   playerRegenSpeed: 10
   playerShieldRegenSpeed: 60
-  enemyHealth: 100
-  enemyDamage: 10
+  enemyHealth: 20
+  enemyDamage: 5
   enemySpeed: 3.5
-  maxBossHealth: 500
-  bossHealth: 500
+  maxBossHealth: 100
+  bossHealth: 100
   bossDamage: 15
   bossForce: 20
   bossSpeed: 5
   isPaused: 0
+  isRoom1Complete: 0
+  isRoom2Complete: 0
+  isRoom3Complete: 0
+  isRoom4Complete: 0
+  isRoom5Complete: 0
 --- !u!4 &976940306
 Transform:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class BossShoot : MonoBehaviour
 {
+    public AudioSource shoot;
     public GameObject bossbullet;
     public Transform bulletpos;
     private float timer;
@@ -28,6 +29,8 @@ public class BossShoot : MonoBehaviour
 
     private void Shoot()
     {
+        shoot.Play();
+
         Instantiate(bossbullet, bulletpos.position, bulletpos.rotation);
     }
 }

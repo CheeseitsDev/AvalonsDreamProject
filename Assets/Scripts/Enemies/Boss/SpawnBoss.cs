@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class SpawnBoss : MonoBehaviour
 {
+    public Collider2D collider1;
+    public Collider2D collider2;
     public GameObject boss;
     public GameObject bossBar;
     public BossShoot bossShootScript;
@@ -17,12 +19,22 @@ public class SpawnBoss : MonoBehaviour
         bossBar.SetActive(false);
     }
 
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(GameManager.Instance.playerKills >= 10)
+        if(collision.tag == "Player")
         {
             Spawn();
+
+            StartCoroutine(DisableTrigger());
         }
+    }
+
+    private IEnumerator DisableTrigger()
+    {
+        yield return new WaitForSeconds(1f);
+        
+        collider1.isTrigger = false;
+        collider2.isTrigger = false;
     }
 
     private void Spawn()

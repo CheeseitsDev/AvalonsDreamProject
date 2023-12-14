@@ -8,8 +8,10 @@ using UnityEngine.SceneManagement;
 
 public class BossHealth : MonoBehaviour
 {
+    public AudioSource hit;
     public Slider bossBar;
     private bool isBossDead;
+    private Scrap scrapScript;
 
     private void Start()
     {
@@ -17,10 +19,14 @@ public class BossHealth : MonoBehaviour
         bossBar.value = GameManager.Instance.bossHealth;
 
         GameManager.Instance.bossHealth = GameManager.Instance.maxBossHealth;
+
+        scrapScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Scrap>();
     }
 
     public void TakeDamage(int damageamount)
     {
+        hit.Play();
+
         GameManager.Instance.bossHealth -= damageamount;
     }
     
@@ -30,6 +36,8 @@ public class BossHealth : MonoBehaviour
 
         if(GameManager.Instance.bossHealth <= 0 && !isBossDead)
         {
+            scrapScript.IncreaseScrap(5);
+
             SceneManager.LoadScene("WinScreen");
         }
     }

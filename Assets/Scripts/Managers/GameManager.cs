@@ -14,19 +14,18 @@ public class GameManager : MonoBehaviour
     public int playerCurrentShieldCharge = 0;
     public int playerHealthUpgradeTier;
     public int playerShieldUpgradeTier;
-    public int playerKills;
     public float playerSpeed = 5f;
     public float playerRegenSpeed = 10f;
     public float playerShieldRegenSpeed = 60f;
 
     [Header("Enemy Attributes")]
-    public int enemyHealth = 100;
-    public int enemyDamage = 10;
+    public int enemyHealth = 20;
+    public int enemyDamage = 5;
     public float enemySpeed = 3.5f;
 
     [Header("Boss Attributes")]
-    public int maxBossHealth = 500;
-    public int bossHealth = 500;
+    public int maxBossHealth = 100;
+    public int bossHealth = 100;
     public int bossDamage = 15;
     public int bossForce = 20;
     public int bossSpeed = 5;
@@ -34,6 +33,11 @@ public class GameManager : MonoBehaviour
 
     [Header("Game Attributes")]
     public bool isPaused = false;
+    public bool isRoom1Complete = false;
+    public bool isRoom2Complete = false;
+    public bool isRoom3Complete = false;
+    public bool isRoom4Complete = false;
+    public bool isRoom5Complete = false;
 
     private void Awake() //This is called before Start function
     {

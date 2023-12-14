@@ -142,6 +142,8 @@ public class PlayerUpgradeMenu : MonoBehaviour
             GameManager.Instance.playerShieldUpgradeTier = 0;
             GameManager.Instance.playerRegenSpeed = 10f;
             GameManager.Instance.playerShieldRegenSpeed = 60f;
+            GameManager.Instance.playerMaxHealth = 100;
+            GameManager.Instance.playerMaxShieldCharges = 0;
 
             healthTier2BTN.interactable = false;
             healthTier3BTN.interactable = false;
@@ -291,7 +293,7 @@ public class PlayerUpgradeMenu : MonoBehaviour
         if(GameManager.Instance.playerScrap >= 5)
         {
             GameManager.Instance.playerScrap -= 5;
-            GameManager.Instance.playerMaxShieldCharges ++;
+            GameManager.Instance.playerMaxShieldCharges = 1;
             GameManager.Instance.playerShieldUpgradeTier = 1;
 
             shieldTier1BTN.interactable = false;
@@ -308,7 +310,7 @@ public class PlayerUpgradeMenu : MonoBehaviour
         if(GameManager.Instance.playerScrap >= 10)
         {
             GameManager.Instance.playerScrap -= 10;
-            GameManager.Instance.playerMaxShieldCharges ++;
+            GameManager.Instance.playerMaxShieldCharges = 2;
             GameManager.Instance.playerShieldUpgradeTier = 2;
 
             shieldTier2BTN.interactable = false;
@@ -325,7 +327,7 @@ public class PlayerUpgradeMenu : MonoBehaviour
         if(GameManager.Instance.playerScrap >= 15)
         {
             GameManager.Instance.playerScrap -= 15;
-            GameManager.Instance.playerMaxShieldCharges ++;
+            GameManager.Instance.playerMaxShieldCharges = 3;
             GameManager.Instance.playerShieldUpgradeTier = 3;
 
             shieldTier3BTN.interactable = false;
@@ -342,7 +344,7 @@ public class PlayerUpgradeMenu : MonoBehaviour
         if(GameManager.Instance.playerScrap >= 20)
         {
             GameManager.Instance.playerScrap -= 20;
-            GameManager.Instance.playerMaxShieldCharges ++;
+            GameManager.Instance.playerMaxShieldCharges = 4;
             GameManager.Instance.playerShieldUpgradeTier = 4;
 
             shieldTier4BTN.interactable = false;
@@ -359,7 +361,7 @@ public class PlayerUpgradeMenu : MonoBehaviour
         if(GameManager.Instance.playerScrap >= 25)
         {
             GameManager.Instance.playerScrap -= 25;
-            GameManager.Instance.playerMaxShieldCharges ++;
+            GameManager.Instance.playerMaxShieldCharges = 5;
             GameManager.Instance.playerShieldUpgradeTier = 5;
 
             GameManager.Instance.playerShieldRegenSpeed = 54f;

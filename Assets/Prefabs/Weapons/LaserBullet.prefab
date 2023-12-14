@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3518595602646980888}
   - component: {fileID: 7195883753566159585}
   - component: {fileID: 2145750489}
-  - component: {fileID: 6593964045419877209}
-  - component: {fileID: 6534949065464878965}
+  - component: {fileID: 2145750490}
+  - component: {fileID: 7708302665883074147}
   m_Layer: 0
-  m_Name: BossBullet
+  m_Name: LaserBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 56a735129457351429cb7cbab918df86, type: 3}
-  m_Color: {r: 1, g: 0.07227322, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -108,7 +108,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6593964045419877209
+--- !u!114 &2145750490
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,10 +117,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8201005743000023927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa731c9d45e9f0c4ea243b351ebcb7ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ace56f723d4cd34bbd5490061d616fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &6534949065464878965
+  rb: {fileID: 2145750489}
+--- !u!61 &7708302665883074147
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,7 +134,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.09584045}
+  m_Offset: {x: 0.01252532, y: 0.06788215}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -144,5 +145,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.4653225, y: 0.40506768}
+  m_Size: {x: 7.4024196, y: 0.5240518}
   m_EdgeRadius: 0

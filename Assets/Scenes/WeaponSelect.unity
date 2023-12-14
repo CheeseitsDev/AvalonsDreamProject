@@ -6563,11 +6563,11 @@ MonoBehaviour:
   playerSpeed: 8
   playerRegenSpeed: 10
   playerShieldRegenSpeed: 60
-  enemyHealth: 100
-  enemyDamage: 10
+  enemyHealth: 20
+  enemyDamage: 5
   enemySpeed: 3.5
-  maxBossHealth: 500
-  bossHealth: 500
+  maxBossHealth: 100
+  bossHealth: 100
   bossDamage: 15
   bossForce: 20
   bossSpeed: 5

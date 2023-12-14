@@ -4,7 +4,7 @@ using UnityEngine;
 
 //Ethan Hoare
 
-public class BossBulletTracking : MonoBehaviour
+public class EnemyBulletTracking : MonoBehaviour
 {
     private Rigidbody2D rb;
     private float timer;
@@ -35,7 +35,7 @@ public class BossBulletTracking : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            healthScript.DamagePlayer(GameManager.Instance.bossDamage);
+            healthScript.DamagePlayer(GameManager.Instance.enemyDamage);
             
             Destroy(gameObject);
         }

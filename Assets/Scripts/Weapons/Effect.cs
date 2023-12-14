@@ -34,5 +34,12 @@ public class Effect : MonoBehaviour
 
             Destroy(gameObject);
         }
+
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            enemyShootScript.HitByEmp();
+
+            Destroy(gameObject);
+        }
     }
 }

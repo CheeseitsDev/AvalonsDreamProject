@@ -6440,7 +6440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coolDown: 5
-  bulletSpeed: 14
+  bulletSpeed: 28
   pistolDamage: 8
   pistolCurrentClip: 0
   pistolClip: 8
@@ -6484,7 +6484,7 @@ MonoBehaviour:
   playerCurrentShieldCharge: 0
   playerHealthUpgradeTier: 0
   playerShieldUpgradeTier: 0
-  playerSpeed: 12
+  playerSpeed: 24
   playerRegenSpeed: 10
   playerShieldRegenSpeed: 60
   enemyHealth: 20
